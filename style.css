@@ -1,0 +1,220 @@
+body{
+    font-family: 'IBM Plex Sans';
+    font-size: 22px;
+    background-color: #a8c6fb;
+    margin: 0;
+}
+h1{
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 2;
+    font-size: 70px;
+}
+.hatter{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    transition: top 4s;
+    margin: 10;
+    overflow: hidden;
+    
+}
+.szov{
+    position: relative;
+    z-index: 10;
+    top: 600px;
+}
+#hat1{
+    z-index: 0;
+    left:0;
+}#hat2{
+    z-index: 1;
+    right: 0;
+}#hat3{
+    z-index: 2;
+    left:0;
+}#hat4{
+    z-index: 3;
+    right: 0;
+}
+.menu{
+    position: absolute;
+    z-index: 10;
+}
+.menu .mgomb img{
+    width: 30px;
+    padding: 15px;
+}
+.mcontent{
+    display: none;
+}
+.menu:hover{
+    width: 100%;
+}
+.menu:hover .mcontent{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.mcontent ul{
+    list-style-type: none;
+    margin-right: 50px;
+
+}
+.mcontent a{
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    box-shadow: -5px 5px 15px black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.mcontent li{
+    margin-bottom: 15px;
+    text-align: center;
+}
+li #egy{
+    background-color: #a8c6fb;
+}
+li #ket{
+    background-color: #7FACFB;
+}li #ha{
+    background-color: #5694FE;
+}
+li #negy  {
+    background-color: #8D8D8D;
+}li #ot  {
+    background-color: #3b3b3b;
+}
+ul a:hover{
+    color: black;
+    box-shadow: -5px 5px 20px 6px black;
+
+}
+#cats{
+    position: relative;
+    z-index: 10;
+    top: 600px;
+    text-align: center;
+}
+.flex-container img{
+    transition: transform .2s;
+}
+.flex-container img:hover{
+    transform: scale(2);
+}
+.adatok{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+footer{
+    bottom: 0px;
+    z-index: 10;
+    position: relative;
+    background-color: gray;
+    padding-bottom: 35px;
+}
+#prof{
+    width: 30%;
+}
+#alkoto{
+    position: relative;
+    z-index: 10;
+    top: 600px;
+    text-align: center;
+    margin-bottom: 700px;
+}
+p, .szov, #cats, #alkoto {
+    padding: 20px;
+}
+.content-flow{
+    height: 2800px;
+    position: relative;
+    overflow: hidden;
+}
+.content{
+text-align: center;}
+#forma, #galcon{
+    display: flex;
+    justify-content: center;
+}
+form, #teszt{
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    width: 400px;
+}
+#cim{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#teszt{
+    text-align: center;
+    display: inline-block;
+    background-color: #5694FE;
+}
+.images{
+    height: 800px;
+    width: 800px;
+}
+
+@media only screen and (min-width: 800px){
+    .szov{
+        display: flex;
+    }
+    #bek3, #bek4{
+        flex-direction: column;
+    }
+    .adatok{
+        flex-direction: row;
+    }
+    .flex-container img:hover{
+        transform: scale(1.8);
+    }
+    .content-flow{
+        height: 2000px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    .flex-container img:hover{
+        transform: scale(1.5);
+    }
+    .menu .mgomb img{
+        display: none;
+    }
+    .mcontent{
+        display: block;
+        text-align: center;
+    }
+    .menu{
+        width: 100%;
+    }
+    .mcontent ul{
+        margin-top: 0;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    .mcontent li{
+        width: 250px;
+    }
+    #bek3, #bek4{
+        flex-direction: row;
+    }
+    .k{
+        flex-wrap: wrap;
+    }
+    .content-flow{
+        height: 2300px;
+    }
+}

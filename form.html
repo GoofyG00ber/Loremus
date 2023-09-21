@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Loremus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+    <link rel="shortcut icon" href="pics/favicon.png" type="image/x-icon">
+    <script src="jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="jquery/jquery.validate.min.js"></script>
+    <script>
+$(document).ready(function()
+{
+   $("#kerdoiv").validate({
+    rules:
+    {
+        vnev: {
+            required: true
+        },
+        knev: {
+            required: true
+        },
+        tel: {
+            required: true,
+            minlength:10,
+            maxlength:10
+        },
+        kedv_fel: {
+            required: true
+        },
+        kedv_all: {
+            required: true
+        },
+        kedv_szin: {
+            required: true
+        },
+        },
+        messages:
+        {
+            vnev: "Kérek vezetéknevet!",
+            knev: "Kérek keresztnevet!",
+            tel: {
+                required: " Kérek tel számot!",
+                minlength: " 10 karakteres egy valós tel szám!"
+            },
+        },
+   });
+});
+    </script>
+</head>
+<body onload="leanimal('hat4'), leanimal('hat3')">
+<div class="content-flow">
+<header>
+    <div class="menu">
+        <div class="mgomb"><img src="pics/hamburg.png" alt=""><br></div>
+        <div class="mcontent">
+            <ul>
+                <li><a href="index.html" id="egy">Home</a></li>
+                <li><a href="gallery.html" id="ket">Gallery</a></li>
+                <li><a href="form.html"id="ha">Questionaire</a></li>
+                <li><a href="test.html"id="negy">Test</a></li>
+                <li><a href="about.html"id="ot">About</a></li>
+            </ul>
+        </div>
+        </div>
+</header>
+<img class="hatter" id="hat1" src="pics/bg1w.png" alt="">
+<img class="hatter" id="hat2" src="pics/bg2.png" alt="">
+<img class="hatter" id="hat3" src="pics/bg3.png" alt="">
+<img class="hatter" id="hat4" src="pics/bg4.png" alt="">
+
+
+<h1>Formus</h1>
+<div class="flex-container szov" id="forma">
+<form action="recieved.php" method="post" id="kerdoiv" novalidate>
+    <div id="cim">Kérdőív</div> <br>
+    <label for="vnev">Vezetéknév:</label><br>
+    <input type="text" id="vnev" name="vnev"><br>
+    <label for="knev">Keresztnév:</label><br>
+    <input type="text" id="knev" name="knev"><br>
+    <label for="tel">Telefonszám:</label><br>
+    <input type="tel" name="tel" id="tel"><br><br>
+
+    <div>Kedvenc feltét:</div>
+    <input type="radio" name="kedv_fel" id="lekvar" value="lekvar">
+    <label for="lekvar">Lekvár</label>
+    <input type="radio" name="kedv_fel" id="vaj" value="vaj">
+    <label for="vaj">Vaj</label>
+    <input type="radio" name="kedv_fel" id="marg" value="margarin">
+    <label for="marg">Margarin</label><br><br>
+
+    <div>Kedvenc állatok:</div>
+    <input type="checkbox" name="kedv_all" id="kutya" value="kutya">
+    <label for="kutya">Kutya</label>
+    <input type="checkbox" name="kedv_all" id="cica" value="cica">
+    <label for="cica">Cica</label>
+    <input type="checkbox" name="kedv_all" id="eger" value="eger">
+    <label for="eger">Egér</label>
+
+    <br><br>
+    <label for="kedv_szin">Kedvenc szín:</label>
+    <input type="color" name="kedv_szin" id="szin">
+    <br><br>
+
+    <label for="ertek">Mennyire menő ez a weboldal:</label><br>
+    <label for="ertek">1</label>
+    <input type="range" name="ertekeles" id="ertek" min="1" max="10">
+    <label for="ertek">10</label><br><br>
+
+    <input type="submit" value="Elküld" id="subm">
+</form>
+</div>
+</div>
+<footer>
+    <div class="flex-container">
+        <div class="adatok">
+    <p>
+        <strong>Adatok</strong><br>
+        Czanik Csanád<br>
+        czanik.csanad@gmail.com<br>
+        06 12 123 1234
+    </p>
+    <p>
+        <strong>Socials</strong> <br>
+        Instagram: @Loremusus<br>
+        Facebook: Loremists<br>
+        Twitter: @Loremusus
+    </p>
+</div>
+</div>
+    <span class="adatok">Minden képzeletbeli jog fenntartva&copy;</span>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
