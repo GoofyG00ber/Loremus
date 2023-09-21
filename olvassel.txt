@@ -1,0 +1,11 @@
+Oldalt készítette: Czanik Csanád
+
+url: https://goofyg00ber.github.io/Loremus/
+
+A weboldalam témája a tenger és hullámok. Konkrét témája nincs az oldalnak, csak placeholder szövegek és képek vannak mindenhol, inkább a design-ra koncentráltam. A címek szójátékot játszanak a "Lorem Ipsum" kifejezésen.
+
+A js kódom, a "script.js" fájlban található. Ebben a fájlban van egy function, ami a hullámok meganimálására szolgál. Ezt követően van egy 5 kérdéses matek feladatsor, ami a test.html fájlból elérhető. Ezek teljesen az én kreálmányaim.
+
+IBM Plex Sans fontot használtam a projekt minden html fájljában.
+
+Internetről átvett kódok: galéria jquery(a jquery galleria pluginhoz csatolt demo.html ből), form jquery(stack overflow nagyban inspirált)
