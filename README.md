@@ -1,6 +1,6 @@
 Oldalt készítette: Czanik Csanád
 
-url: 
+url: https://goofyg00ber.github.io/Loremus/
 
 A weboldalam témája a tenger és hullámok. Konkrét témája nincs az oldalnak, csak placeholder szövegek és képek vannak mindenhol, inkább a design-ra koncentráltam. A címek szójátékot játszanak a "Lorem Ipsum" kifejezésen.
 
